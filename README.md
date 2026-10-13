@@ -1,5 +1,10 @@
 # Minicore MVC — Sistema de Comisiones con SQLite
 
+**Aplicación publicada:** https://creative-twilight-9fe0c4.netlify.app
+
+**API y salud:** https://minicore-comisiones-ui07.onrender.com/api/health
+
+
 Aplicación académica original para administrar vendedores, registrar ventas y calcular comisiones por período. **Esta versión usa SQLite por solicitud del usuario; no requiere PostgreSQL, Docker, contraseñas ni un servidor de base de datos.** La base se crea automáticamente en `backend/data/comisiones.sqlite` al iniciar la API.
 
 ## Inicio rápido
@@ -103,7 +108,7 @@ Consulta DESPLIEGUE.md. En Render configurar TURSO_DATABASE_URL y TURSO_AUTH_TOK
 
 Localmente continúa usando el archivo SQLite sin credenciales. Si TURSO_DATABASE_URL está configurada, la capa de datos utiliza el cliente HTTP @libsql/client/web; el modelo obtiene una instantánea transaccional y el cálculo sigue en comisionService.js. Las pruebas limpian la configuración remota y usan únicamente bases locales de memoria.
 
-Las 21 pruebas locales pasan. La conexión remota y publicación requieren cuentas y credenciales reales y aún no se han verificado. No se han creado recursos de pago. No hay autenticación de usuarios en esta actividad; utiliza datos académicos de demostración para la API pública.
+Las 21 pruebas locales pasan. El 13 de octubre se verificaron salud, CORS, CRUD y comisiones contra Turso mediante la API pública, y dashboard/gráficos desde Netlify. No se han creado recursos de pago. No hay autenticación de usuarios en esta actividad; utiliza datos académicos de demostración para la API pública.
 
 ## Referencias y cambio de requisito
 

@@ -4,7 +4,11 @@ Repositorio del usuario: https://github.com/LangleyRunner/Sistema-de-Comisiones
 
 ## Estado
 
-Código preparado para Render Free, Netlify y SQLite persistente en Turso Free. **No hay despliegue confirmado ni URL propia pública**. Se necesitan cuentas autenticadas y una base real de Turso. No se ha creado ningún recurso de pago.
+**Aplicación publicada:** https://creative-twilight-9fe0c4.netlify.app
+
+**API y salud:** https://minicore-comisiones-ui07.onrender.com/api/health
+
+Despliegue verificado el 13 de octubre de 2026: Render Free, Netlify (producción pública, previews privadas) y Turso Free. Salud, CORS, CRUD y comisiones remotas aprobados. Servicio Render: srv-db7b81bbc2fs73ehedkg; base Turso: minicore-comisiones. Secretos guardados solo en Render. No se ha creado ningún recurso de pago.
 
 ## 1. Conexiones y repositorio
 
