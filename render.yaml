@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: minicore-api
+    runtime: node
+    plan: free
+    buildCommand: npm ci --workspace backend --include-workspace-root
+    startCommand: npm start --workspace backend
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 24.21.0
+      - key: NODE_ENV
+        value: production
+      - key: TURSO_DATABASE_URL
+        sync: false
+      - key: TURSO_AUTH_TOKEN
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false

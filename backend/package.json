@@ -1,0 +1,25 @@
+{
+  "name": "minicore-backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --import ./scripts/testSetup.js --test",
+    "db:init": "node scripts/database.js schema",
+    "db:seed": "node scripts/database.js seed"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.18.0",
+    "cors": "^2.8.5",
+    "decimal.js": "^10.6.0",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

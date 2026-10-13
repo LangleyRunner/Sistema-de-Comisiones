@@ -1,0 +1,21 @@
+{
+  "name": "sistema-comisiones-mvc",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev -w backend",
+    "dev:frontend": "npm run dev -w frontend",
+    "test": "npm test -w backend",
+    "build": "npm run build -w frontend",
+    "db:init": "npm run db:init -w backend",
+    "db:seed": "npm run db:seed -w backend",
+    "start": "node scripts/start.js"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10"
+  },
+  "type": "module"
+}
